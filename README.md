@@ -18,6 +18,10 @@ openssl扩展
        
         make && make install
 ```
+### 关于 ./configure 的容易出错的举例如下(依赖企业微信的C语言sdk，需先完整下载Linux版本的C语言的sdk到编译目录下)
+```
+        ./configure --with-php-config=/usr/local/php-7.2/bin/php-config --with-wxwork-finance-sdk=/usr/local/wxwork/C_SDK
+```
     php.ini 增加 extension=wxwork_finance_sdk.so
     
 ## API
